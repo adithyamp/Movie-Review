@@ -21,7 +21,6 @@ def register(request):
 
                 # login the user
                 login(request, user)
-
                 return redirect("main:home")
         else:
             form = RegistrationForm()

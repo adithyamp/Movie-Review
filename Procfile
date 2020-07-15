@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath django_moviereview django_moviereview.wsgi --log-file -

@@ -11,8 +11,8 @@
                       <div class="card">
                           <div class="card-body">
                               <div class="text-center">
-                              <img src="{{ movie.image }}" alt="" class="img-fluid" width="75%">
-                              <h4 class="text-center">{{ movie.name }}</h4>
+                                  <a href="{% url 'main:detail' movie.id %}"><img src="{{ movie.image }}" alt="" class="img-fluid" width="75%"></a>
+                                  <h4 class="text-center">{{ movie.name }}</h4>
                                   <i class="text-center">{{ movie.release_date }}</i>
                                   <a href="{% url 'main:detail' movie.id %}">Read More</a>
                               </div>
